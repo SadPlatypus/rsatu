@@ -9,7 +9,7 @@ if __name__ == '__main__':
     for i in range(word_count):
         for j in range(len(dictionary)):
             if word_field[i] == dictionary[j] or word_field[i] == dictionary[j][::-1]:
-                row = ' '.join([str(j + 1) for _ in word_field])
+                row = ' '.join([str(j + 1) for _ in word_field[i]])
                 output.append(row)
 
     with open('standard_output.txt', 'w') as file:
