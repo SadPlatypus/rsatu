@@ -1,5 +1,5 @@
 def mark_cell(current_row, current_col):
-    if 0 < current_row > rows - 1 or 0 < current_col > cols - 1:
+    if current_row < 0 or current_row > rows - 1 or current_col < 0 or current_col > cols - 1:
         return
 
     if mapData[current_row][current_col] == '.':
